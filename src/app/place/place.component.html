@@ -1,0 +1,15 @@
+<h1> Cool Pics! </h1>
+<div class="row row-cols-1 row-cols-md-5">
+  <div class="col mb-4" *ngFor="let pic of pics">
+    <div class="card h-100">
+      <img src="{{pic.download_url}}" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">{{pic.author}}</h5>
+        <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+      </div>
+      <div class="card-footer">
+      <small class="text-muted">Email: {{pic.author}}@example.com</small>
+     </div>
+    </div>
+  </div>
+</div>
